@@ -10,15 +10,19 @@ class ExhibitListScreen extends StatefulWidget {
 }
 
 class _ExhibitListScreenState extends State<ExhibitListScreen> {
+  String title = "전시 목록";
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: Header(
         appBar: AppBar(),
-        title: "작가 목록",
+        title: title,
       ),
       body: const Scaffold(),
-      bottomNavigationBar: const Footer(),
+      bottomNavigationBar: Footer(
+        title: title,
+      ),
     );
   }
 }

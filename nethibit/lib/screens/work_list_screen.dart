@@ -10,15 +10,19 @@ class WorkListScreen extends StatefulWidget {
 }
 
 class _WorkListScreenState extends State<WorkListScreen> {
+  String title = "작품 목록";
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: Header(
         appBar: AppBar(),
-        title: "작품 목록",
+        title: title,
       ),
       body: const Scaffold(),
-      bottomNavigationBar: const Footer(),
+      bottomNavigationBar: Footer(
+        title: title,
+      ),
     );
   }
 }

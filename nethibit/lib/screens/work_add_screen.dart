@@ -10,15 +10,19 @@ class WorkAddScreen extends StatefulWidget {
 }
 
 class _WorkAddScreenState extends State<WorkAddScreen> {
+  String title = "작품 등록";
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: Header(
         appBar: AppBar(),
-        title: "작품 등록",
+        title: title,
       ),
       body: const Scaffold(),
-      bottomNavigationBar: const Footer(),
+      bottomNavigationBar: Footer(
+        title: title,
+      ),
     );
   }
 }

@@ -10,15 +10,19 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  String title = "메인";
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: Header(
         appBar: AppBar(),
-        title: "메인",
+        title: title,
       ),
       body: const Scaffold(),
-      bottomNavigationBar: const Footer(),
+      bottomNavigationBar: Footer(
+        title: title,
+      ),
     );
   }
 }

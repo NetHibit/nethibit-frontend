@@ -10,15 +10,19 @@ class ProfileEditScreen extends StatefulWidget {
 }
 
 class _ProfileEditScreenState extends State<ProfileEditScreen> {
+  String title = "프로필 편집";
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: Header(
         appBar: AppBar(),
-        title: "프로필 편집",
+        title: title,
       ),
       body: const Scaffold(),
-      bottomNavigationBar: const Footer(),
+      bottomNavigationBar: Footer(
+        title: title,
+      ),
     );
   }
 }

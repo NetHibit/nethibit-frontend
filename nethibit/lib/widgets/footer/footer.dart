@@ -7,7 +7,12 @@ import 'package:nethibit/screens/my_profile_screen.dart';
 import 'package:nethibit/screens/work_add_screen.dart';
 
 class Footer extends StatefulWidget {
-  const Footer({super.key});
+  final String title;
+
+  const Footer({
+    super.key,
+    required this.title,
+  });
 
   @override
   State<Footer> createState() => _FooterState();
@@ -113,7 +118,9 @@ class _FooterState extends State<Footer> {
               color: Colors.white,
               child: Icon(
                 Icons.home,
-                color: getIconColor(0),
+                color: widget.title == "메인"
+                    ? const Color(0xFF0F52BA)
+                    : getIconColor(0),
               ),
             ),
           ),
@@ -128,7 +135,9 @@ class _FooterState extends State<Footer> {
               color: Colors.white,
               child: Icon(
                 Icons.dashboard,
-                color: getIconColor(1),
+                color: widget.title == "전시 목록"
+                    ? const Color(0xFF0F52BA)
+                    : getIconColor(1),
               ),
             ),
           ),
@@ -143,7 +152,9 @@ class _FooterState extends State<Footer> {
               color: Colors.white,
               child: Icon(
                 Icons.add_circle,
-                color: getIconColor(2),
+                color: (widget.title == "전시 등록" || widget.title == "작품 등록")
+                    ? const Color(0xFF0F52BA)
+                    : getIconColor(2),
               ),
             ),
           ),
@@ -158,7 +169,9 @@ class _FooterState extends State<Footer> {
               color: Colors.white,
               child: Icon(
                 Icons.mode_comment,
-                color: getIconColor(3),
+                color: widget.title == "채팅"
+                    ? const Color(0xFF0F52BA)
+                    : getIconColor(3),
               ),
             ),
           ),
@@ -173,7 +186,9 @@ class _FooterState extends State<Footer> {
               color: Colors.white,
               child: Icon(
                 Icons.person,
-                color: getIconColor(4),
+                color: widget.title == "내 프로필"
+                    ? const Color(0xFF0F52BA)
+                    : getIconColor(4),
               ),
             ),
           ),

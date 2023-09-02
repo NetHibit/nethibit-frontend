@@ -10,15 +10,18 @@ class ArtistProfileScreen extends StatefulWidget {
 }
 
 class _ArtistProfileScreenState extends State<ArtistProfileScreen> {
+  String title = "작가 프로필";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: Header(
         appBar: AppBar(),
-        title: "작가 프로필",
+        title: title,
       ),
       body: const Scaffold(),
-      bottomNavigationBar: const Footer(),
+      bottomNavigationBar: Footer(
+        title: title,
+      ),
     );
   }
 }

@@ -15,7 +15,6 @@ class NetHibit extends StatelessWidget {
       theme: ThemeData(
         cardColor: const Color(0xFF0F52BA),
       ),
-      initialRoute: '/',
       home: const HomeScreen(),
     );
   }
