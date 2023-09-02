@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const NetHibit());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class NetHibit extends StatelessWidget {
+  const NetHibit({super.key});
 
   // This widget is the root of your application.
   @override
