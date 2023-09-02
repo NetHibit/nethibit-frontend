@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:nethibit/widgets/footer/footer.dart';
+import 'package:nethibit/widgets/header/header.dart';
 
 class ExhibitListScreen extends StatefulWidget {
   const ExhibitListScreen({super.key});
@@ -10,8 +12,13 @@ class ExhibitListScreen extends StatefulWidget {
 class _ExhibitListScreenState extends State<ExhibitListScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Text("전시 목록"),
+    return Scaffold(
+      appBar: Header(
+        appBar: AppBar(),
+        title: "작가 목록",
+      ),
+      body: const Scaffold(),
+      bottomNavigationBar: const Footer(),
     );
   }
 }

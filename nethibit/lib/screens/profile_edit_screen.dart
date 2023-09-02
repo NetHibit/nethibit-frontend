@@ -2,20 +2,20 @@ import 'package:flutter/material.dart';
 import 'package:nethibit/widgets/footer/footer.dart';
 import 'package:nethibit/widgets/header/header.dart';
 
-class MyProfileScreen extends StatefulWidget {
-  const MyProfileScreen({super.key});
+class ProfileEditScreen extends StatefulWidget {
+  const ProfileEditScreen({super.key});
 
   @override
-  State<MyProfileScreen> createState() => _MyProfileScreenState();
+  State<ProfileEditScreen> createState() => _ProfileEditScreenState();
 }
 
-class _MyProfileScreenState extends State<MyProfileScreen> {
+class _ProfileEditScreenState extends State<ProfileEditScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: Header(
         appBar: AppBar(),
-        title: "내 프로필",
+        title: "프로필 편집",
       ),
       body: const Scaffold(),
       bottomNavigationBar: const Footer(),

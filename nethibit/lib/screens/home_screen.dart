@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nethibit/widgets/header/header.dart';
 import 'package:nethibit/widgets/footer/footer.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -12,8 +13,9 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("NetHibit"),
+      appBar: Header(
+        appBar: AppBar(),
+        title: "메인",
       ),
       body: const Scaffold(),
       bottomNavigationBar: const Footer(),

@@ -12,9 +12,9 @@ class NetHibit extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'NetHibit',
-      // routes: {
-      //   '/': (context) => 
-      // },
+      theme: ThemeData(
+        cardColor: const Color(0xFF0F52BA),
+      ),
       initialRoute: '/',
       home: const HomeScreen(),
     );
