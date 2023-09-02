@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nethibit/screens/chat_screen.dart';
-import 'package:nethibit/screens/exhibit_add_screen.dart';
-import 'package:nethibit/screens/exhibit_list_screen.dart';
+import 'package:nethibit/screens/exhibit/exhibit_add_screen.dart';
+import 'package:nethibit/screens/exhibit/exhibit_list_screen.dart';
 import 'package:nethibit/screens/home_screen.dart';
 import 'package:nethibit/screens/my_profile_screen.dart';
 import 'package:nethibit/screens/work_add_screen.dart';
