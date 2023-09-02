@@ -3,7 +3,7 @@ import 'package:nethibit/screens/chat_screen.dart';
 import 'package:nethibit/screens/exhibit_add_screen.dart';
 import 'package:nethibit/screens/exhibit_list_screen.dart';
 import 'package:nethibit/screens/home_screen.dart';
-import 'package:nethibit/screens/my_info_screen.dart';
+import 'package:nethibit/screens/my_profile_screen.dart';
 import 'package:nethibit/screens/work_add_screen.dart';
 
 class Footer extends StatefulWidget {
@@ -89,7 +89,7 @@ class _FooterState extends State<Footer> {
     } else if (selectedIndex == 4) {
       // 다섯 번째 아이콘을 클릭한 경우
       Navigator.of(context).push(MaterialPageRoute(
-        builder: (context) => const MyInfoScreen(),
+        builder: (context) => const MyProfileScreen(),
       ));
     }
   }
