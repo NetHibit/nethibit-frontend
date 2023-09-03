@@ -65,6 +65,7 @@ class _ExhibitAddScreenState extends State<ExhibitAddScreen> {
   }
 }
 
+// 전시 기간 캘린더 위젯
 class CalendarWidget extends StatefulWidget {
   const CalendarWidget({super.key});
 
