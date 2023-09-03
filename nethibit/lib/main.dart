@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:nethibit/screens/home_screen.dart';
+import 'package:intl/date_symbol_data_local.dart';
 
-void main() {
+void main() async {
+  initializeDateFormatting();
   runApp(const NetHibit());
 }
 
