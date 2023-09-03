@@ -46,7 +46,7 @@ class _ExhibitAddScreenState extends State<ExhibitAddScreen> {
                   width: 15,
                 ),
                 const Expanded(
-                  child: CalendarWidget(),
+                  child: TextFieldWidget(),
                 ),
               ],
             ),
@@ -61,6 +61,36 @@ class _ExhibitAddScreenState extends State<ExhibitAddScreen> {
       bottomNavigationBar: Footer(
         title: title,
       ),
+    );
+  }
+}
+
+// 제목, 한 줄 설명 텍스트 필드 위젯
+class TextFieldWidget extends StatefulWidget {
+  const TextFieldWidget({super.key});
+
+  @override
+  State<TextFieldWidget> createState() => _TextFieldWidgetState();
+}
+
+class _TextFieldWidgetState extends State<TextFieldWidget> {
+  String inputValue = "";
+  @override
+  Widget build(BuildContext context) {
+    return TextFormField(
+      keyboardType: TextInputType.text,
+      textInputAction: TextInputAction.done,
+      decoration: const InputDecoration(
+        border: InputBorder.none,
+      ),
+      onChanged: (String value) {
+        setState(() {
+          inputValue = value;
+        });
+      },
+      onFieldSubmitted: (String value) {
+        print("입력된 텍스트: $inputValue");
+      },
     );
   }
 }
